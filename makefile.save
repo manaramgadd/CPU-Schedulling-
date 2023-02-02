@@ -1,0 +1,17 @@
+CC=g++
+SRC=
+OBJ=FCFS.o
+
+
+all:${OBJ}
+
+
+build:
+	${CC} -c ${SRC}
+
+${OBJ}:build
+	${CC} -o FCFS ${OBJ}
+
+
+clean:
+	rm -rf ${OBJ} FCFS
